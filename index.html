@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TalentIQ Dashboard</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="dashboard-card">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>TalentIQ</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Profile</li>
+        <li>Tests</li>
+        <li>Jobs</li>
+        <li>AI Interview</li>
+      </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+      <!-- Topbar -->
+      <div class="topbar">
+        <h1>Welcome, <span id="username">User</span> 👋</h1>
+        <h3>Rank: <span id="rank">#0</span></h3>
+      </div>
+
+      <!-- Summary Cards -->
+      <div class="card-container">
+        <div class="card">
+          <h3>Score</h3>
+          <p id="score">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Completed Tests</h3>
+          <p id="tests">0</p>
+        </div>
+
+        <div class="card">
+          <h3>CV Status</h3>
+          <p id="cvStatus">Not Uploaded</p>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="actions">
+        <h2>Quick Actions</h2>
+        <div class="btn-group">
+          <button class="btn-primary" onclick="goTo('skills-test.html')">Take Test</button>
+          <button class="btn-primary" onclick="goTo('cv-upload.html')">Upload CV</button>
+          <button class="btn-primary" onclick="goTo('jobs.html')">View Jobs</button>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div class="notifications">
+        <h2>Notifications</h2>
+        <div id="notificationList"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JS Link -->
+  <script src="script.js"></script>
+</body>
+</html>
